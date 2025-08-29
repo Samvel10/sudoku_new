@@ -1,4 +1,3 @@
-Mark Mkhitaryan, [29.08.2025 15:55]
 let varkyan = 0;
 let rope = 0;
 let mili = 0;
@@ -134,7 +133,6 @@ function timerResume() {
 }    
 function timerEnd() {
 
-Mark Mkhitaryan, [29.08.2025 15:55]
 varkyan = 0;
     mili = 0;
     rope = 0;
@@ -264,7 +262,6 @@ function renderGrid(grid, solutiongrid) {
             IncorrectSound.play();
             makefail();
 
-Mark Mkhitaryan, [29.08.2025 15:55]
 clearInterval(timeInterval);
                         setTimeout(() => {
                           if (gameOver) return;
@@ -321,3 +318,4 @@ fillGrid(sudokuGrid);
 let solutiongrid = JSON.parse(JSON.stringify(sudokuGrid));
 hideRandomCells(sudokuGrid, 81)
 renderGrid(sudokuGrid, solutiongrid);
+
