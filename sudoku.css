@@ -1,0 +1,204 @@
+#sudoku {
+  background-color: white;
+    border-collapse:collapse;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow:0 0 0 3px #000000;
+    margin-left: 475px;
+    margin-top: 50px;
+    transition: background .10s ease, transform .10s ease;
+  }
+  td {
+    font-family: Arial;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(196, 196, 196);
+    font-size: 20px;
+    transition: background .10s ease, transform .10s ease;
+  }
+  td:hover{
+    background: #a7cef2;
+    transform: translate;
+}
+#Titlee {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 67px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+#Timer {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-top: -30px;
+  margin-right: 155px;
+  font-size: 30px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.fullscreen-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeInResult 1.5s ease-out forwards;
+    animation: fadeInResult 0.8s ease-out forwards;
+  }
+  .fullscreen-gif img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+.fullscreen-gif1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeInResult 0.8s ease-out forwards;
+  }
+
+  .fullscreen-gif1 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .fullscreen-gif2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    pointer-events: none;
+    animation: fadeInResult 0.8s ease-out forwards;
+  }
+
+  .fullscreen-gif2 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+#knopka {
+  margin-left: 624px;
+  margin-top: -10px;
+}
+#fails{
+  margin-top: -75px;
+  text-align: center;
+  margin-left: 180px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color:rgb(147, 197, 212)
+}
+  tr:nth-child(3n) td {
+  border-bottom: 2px solid black;
+}
+
+td:nth-child(3n) {
+    border-right: 2px solid black;
+}
+tr:first-child td {
+  border-top: 2px solid black;
+}
+
+td:first-child {
+    border-left: 2px solid black;
+}
+input{
+  width: 40px;
+  height: 40px;
+  border: white;
+  transition: background .10s ease, transform .10s ease;
+  cursor: pointer;
+  outline: none;
+}
+input:hover{
+  background: #a7cef2;
+  transform: translate;
+}
+input:disabled:hover{
+  color: #000000;
+  transform: translate;
+  background: #a7cef2;
+}
+input:hover:not(:disabled) {
+  background: #a7cef2;
+  transform: translate;
+}
+.error {
+  background: red;
+}
+.correct {
+  background: #a7cef2
+}
+.win {
+  background: lightgreen;
+}
+@keyframes fadeInResult {
+  from {
+    opacity: 0;
+    transform: translate;
+  } to {
+    opacity: 1;
+    transform: translate;
+  }
+  
+}
+input.error:hover {
+  background: red;
+}
+input.win:hover {
+  background: lightgreen;
+}
+td.win:hover {
+  background: lightgreen;
+}
+#veryeasy {
+   margin-left: 380px;
+}
+#eazy {
+    margin-top: 20px;
+  margin-left: 395px;
+
+}
+#normal {
+  margin-top: 20px;
+  margin-left: 389px;
+}
+#hard {
+  margin-top: 20px;
+  margin-left: 395px;
+}
+#extrahard {
+    margin-top: 20px;
+  margin-left: 379px;
+}
+#impossible {
+    margin-top: 20px;
+  margin-left: 379px;
+}
+
+#Levels {
+  margin-top: -380px;
+    margin-right: 560px;
+  margin-left: 375px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
