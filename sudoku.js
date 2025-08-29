@@ -260,7 +260,12 @@ function renderGrid(grid, solutiongrid) {
             IncorrectSound.currentTime = 0;
             IncorrectSound.play();
             makefail();
-
+          }
+        }
+      }
+    }
+  }
+}
 clearInterval(timeInterval);
                         setTimeout(() => {
                           if (gameOver) return;
@@ -317,5 +322,6 @@ fillGrid(sudokuGrid);
 let solutiongrid = JSON.parse(JSON.stringify(sudokuGrid));
 hideRandomCells(sudokuGrid, 81)
 renderGrid(sudokuGrid, solutiongrid);
+
 
 
