@@ -107,11 +107,10 @@ document.getElementById("knopka").onclick = function knopka() {
     }    
 }    
 function updateTimerDisplay() {
-    document.getElementById("Timer").textContent =
-    ${rope.toString().padStart(2, '0')}: +
-    ${varkyan.toString().padStart(2, '0')}: +
-    ${mili.toString().padStart(3, '0')};
-    
+  document.getElementById("Timer").textContent =
+    `${rope.toString().padStart(2, '0')}:` +
+    `${varkyan.toString().padStart(2, '0')}:` +
+    `${mili.toString().padStart(3, '0')}`;
 }    
 function timertostop() {
     clearInterval(timeInterval);
@@ -318,4 +317,5 @@ fillGrid(sudokuGrid);
 let solutiongrid = JSON.parse(JSON.stringify(sudokuGrid));
 hideRandomCells(sudokuGrid, 81)
 renderGrid(sudokuGrid, solutiongrid);
+
 
